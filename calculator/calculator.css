@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A1615;
+}
+
+.calculator {
+    min-width: 400px;
+}
+
+.calculator__result {
+    height: 100px;
+    width: 100%;
+    background-color: #FDFFFC;
+    position: relative;
+    border: 1px solid #fdfffc;
+    border-radius: 12px;
+}
+
+.calculator__input {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    border:none;
+
+    font-size: 42px;
+    color: #02000A;
+    font-family: 'Inter', sans-serif;
+
+    text-align: right;
+    vertical-align: bottom;
+    padding-right: 10px;
+}
+
+.calculator__input:focus {
+    border: none;
+    outline: none;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.calculator__panel__wrapper {
+    max-width: 420px;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.calculator__panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 12px;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+
+
+.btn {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: #f3f4f7;
+    box-shadow: inset 1px 1px 2px #080029;
+    font-size: 28px;
+
+    transition: 50ms;
+}
+
+.btn:hover {
+    box-shadow: inset 1px 1px 5px #080029;
+    background-color: #E7E9EF;
+}
+
+.btn:active {
+    background-color: #fbfbfd;
+    box-shadow: inset 1px 1px 5px #232323;
+}
+
+.btn_orange {
+    background-color: #FF500A;
+    color: white;
+}
+
+.btn_orange:hover {
+    background-color: #e74703;
+}
+
+.btn_orange:active {
+    background-color: #ff672b;
+}
+
+.btn_wide {
+    width: 200px;
+}
