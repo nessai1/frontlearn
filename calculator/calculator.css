@@ -52,6 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 0 16px;
 }
 
 .calculator__panel__wrapper {
