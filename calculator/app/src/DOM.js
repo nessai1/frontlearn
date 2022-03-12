@@ -1,5 +1,4 @@
 export function select(selector, scope) {
-    debugger;
     if (scope === undefined) {
         scope = document;
     }
@@ -9,7 +8,13 @@ export function select(selector, scope) {
 
 export function create(tagName, params) {
     let element = document.createElement(tagName);
-    element.dataset = params.dataset;
+    if (params.aClass instanceof Array) {
+        element.className = params.aClass.join(' ');
+    }
+
+    if (params.value !== undefined) {
+        element.value = params.value;
+    }
 
     return element;
 }
